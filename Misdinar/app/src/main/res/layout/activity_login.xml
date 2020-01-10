@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_solid"
+    tools:context=".Login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Welcome"
+            android:textColor="@color/lightGreen"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textViewWelcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Welcome to Magyk App, here you can see your schedule and get reminder of your duty."
+            android:textColor="@color/transparentwhite"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+                />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparentwhite"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="Username"
+            android:layout_marginTop="40dp"
+            android:inputType="textPersonName"
+            android:textColor="@color/transparentwhite"
+            android:textColorHint="@color/transparentwhite" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/transparentwhite"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/transparentwhite"
+            android:textColor="@color/transparentwhite"
+            android:fontFamily="@font/montserrat"/>
+
+        <TextView
+            android:id="@+id/textViewNeedHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Need Help?"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/teal" />
+
+        <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/rounded_button"
+                android:text="Login"
+                android:textColor="@color/lightGreen"
+                android:textSize="18sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>
